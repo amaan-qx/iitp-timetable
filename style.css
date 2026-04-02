@@ -1,0 +1,98 @@
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E9D5FF;
+    overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  background-image: url("back.png");    
+  animation: movingBack 20s linear infinite alternate; 
+}
+
+@keyframes movingBack {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 100%;
+    }
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+  @media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+}
+
+#holder{
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    font-size: medium;
+
+    padding-left: 40px;  /* icon ke liye space */
+    background-image: url("https://cdn-icons-png.flaticon.com/512/622/622669.png");
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 18px;
+}
+
+#holder::placeholder {
+    color: white;
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+#holderdiv{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+}
+
+#tab {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+}
+
+#navbar {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url("https://f2.leadsquaredcdn.com/t/microtek/content/common/images/IITP%20LOGO.png");
+    height: 95px;
+    width: 375px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+}
+
+#sched {
+    color : rgb(121, 8, 173);
+}
