@@ -1,34 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            IITP Time Table Viewer
-        </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html>
+<head>
+  <title>Timetable Viewer</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <h1 class="title">Timetable Viewer</h1>
+      <p class="subtitle">Enter your roll number to see all matching timetable entries.</p>
 
-     <body>
-
-        <div id="navbar">
+      <div class="searchRow">
+        <label class="label" for="rollInput">Roll number</label>
+        <div class="inputRow">
+          <input
+            type="text"
+            id="rollInput"
+            placeholder="e.g., 2301AI01"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button id="searchBtn" type="button">Search</button>
         </div>
-        
-        <!--heading-->
-        <div id="heading">
-            <h1><span id="sched">MidSem </span>Schedule Finder</h1>
-        </div>
+        <div id="status" class="status" aria-live="polite"></div>
+      </div>
 
-        <!--tab-->
-         <div id="tab">
-            <a id="tab1">Mid Sem</a>
-            <a id="tab2">Compare</a>
-        </div>
+      <div id="result" class="result"></div>
+    </section>
+  </main>
 
-        <!--Search-->
-        <div id="holderdiv">
-                <input type="text" placeholder="Search by student name or roll number..." id="holder">
-        </div>
-
-     </body>
+  <script src="script.js"></script>
+</body>
 </html>
