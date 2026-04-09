@@ -179,5 +179,32 @@ tr:hover td {
   button {
     width: 100%;
   }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  /* Mobile-friendly single table (not separate cards) */
+  .tableWrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+
+  table {
+    width: 100%;
+    min-width: 520px; /* keep one table; allow scroll instead */
+  }
+
+  th,
+  td {
+    padding: 10px 10px;
+    font-size: 13px;
+  }
 }
 
