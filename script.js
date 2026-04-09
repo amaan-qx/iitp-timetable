@@ -68,10 +68,10 @@ function renderResults(results, normalizedRoll) {
     .map((r) => {
       return `
         <tr>
-          <td>${safe(r["Date"])}</td>
-          <td>${safe(r["SESSION"])}</td>
-          <td>${safe(r["Room No"])}</td>
-          <td>${safe(r["Course No"])}</td>
+          <td data-label="Date">${safe(r["Date"])}</td>
+          <td data-label="Session">${safe(r["SESSION"])}</td>
+          <td data-label="Room">${safe(r["Room No"])}</td>
+          <td data-label="Course">${safe(r["Course No"])}</td>
         </tr>`;
     })
     .join("");
